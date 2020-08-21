@@ -1,0 +1,23 @@
+{
+  "type": "record",
+  "name": "ErrorDetails",
+  "namespace": "com.shanidgafur.error",
+  "doc": "This is an error record for my application",
+  "fields": [
+    {
+      "name": "category",
+      "doc": "Category of the error. Example: DatabaseConnectionError",
+      "type": "string"
+    },
+    {
+      "name": "severity",
+      "doc": "The severity of the error. Example: CRITICAL, FATAL, WARNING",
+      "type": "string"
+    },
+	{
+      "name": "timestamp",
+      "doc": "Timestamp (milliseconds since epoch) when the error was generated",
+      "type": "long"
+    }
+  ]
+}
